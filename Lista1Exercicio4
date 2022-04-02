@@ -1,0 +1,28 @@
+package Teste1;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+double a,b,c,d; // double porque é um numero grande (double também é um float)
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("\nEntre com o primeiro Número");
+		a = leia.nextDouble();
+		
+		System.out.println("\nEntre com o segundo Número");
+		b = leia.nextDouble();
+		
+		System.out.println("\nEntre com o terceiro Número");
+		c = leia.nextDouble();
+		
+		// d = (r+s)/2 r = (a+b) ao quadrado s = (b+c)
+		d = (Math.pow((a+b),2) + Math.pow((b+c),2)) / 2;
+		
+		System.out.println("\nO valor de D é: "+D);
+		
+		
+	}
+
+}
