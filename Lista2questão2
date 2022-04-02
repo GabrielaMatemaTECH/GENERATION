@@ -1,0 +1,28 @@
+package Teste1;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//2- Faça um programa que entre com três números e coloque em ordem crescente.
+		
+		int a,b,c;
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("\nEntre com o primeiro Número");
+		a = leia.nrxtImt();
+		
+		System.out.println("\nEntre com o segundo Número");
+		b = leia.nrxtImt();
+		
+		System.out.println("\nEntre com o terceiro Número");
+		c = leia.nrxtImt();
+		
+		if(a<=b && b<=c)
+		{
+			System.out.println("\n Ordem crescente:"+a+");
+		}
