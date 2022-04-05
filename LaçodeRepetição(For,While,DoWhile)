@@ -1,0 +1,115 @@
+// Dia 4 de abril de 2022 - FOR, WHILE e DOWHILE
+
+package Familia51;
+
+import java.util.Scanner;
+
+public class RepeticaoFor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		float n1,n2,n3,media,somaMedia=0,mg;
+		int x;
+		Scanner leia = new Scanner(System.in);
+		
+		for(x=1;x<=3;x++)
+		{
+			System.out.println("\nEntre com a primeira nota: ");
+			n1 = leia.nextFloat();
+			System.out.println("\nEntre com a segunda nota: ");
+			n2 = leia.nextFloat();
+			System.out.println("\nEntre com a terceira nota: ");
+			n3 = leia.nextFloat();
+			
+			media = (n1+n2+n3) / 3;
+			System.out.printf("\nMédia aritmética: %2.2f e a primeira nota foi de: %2.2f",media,n1);
+			somaMedia += media;
+			
+		}
+		mg = somaMedia / 3;
+		System.out.println("\nMédia geral: "+mg);
+	}
+
+}
+
+
+
+package Familia51;
+
+import java.util.Scanner;
+
+public class RepeticaoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int numero,contNumero=0;
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.println("\nEntre com um número: ");
+		numero = ler.nextInt();//10
+		for(int x=1;x<=20;x++)
+		{
+			System.out.println("\n");
+		}
+		
+		while(numero!=-99)
+		{
+			contNumero++;
+			System.out.println("\nEntre com um número: ");
+			numero = ler.nextInt(); // 88 99 -99
+			for(int x=1;x<=20;x++)
+			{
+				System.out.println("\n");
+			}
+		}
+		System.out.println("\nQuantidade de números digitados foi de: "+contNumero);
+	}
+
+}
+
+
+
+package Familia51;
+
+import java.util.Scanner;
+
+public class RepeticaoDoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num,somaPar=0,somaImpar=0,x;
+		Scanner leia = new Scanner (System.in);
+		
+		do
+		{
+			
+			
+			System.out.println("\nEntre com um número: ");
+			num = leia.nextInt(); //-9 10 -7
+			if(num<0)
+			{
+				System.out.println("\nNegativo");
+			}
+			else
+			{
+				if(num%2==0)
+				{
+					somaPar+=num;
+				}
+				else
+				{
+					somaImpar+=num;
+				}
+			}
+		}
+		while(num>=0);
+		System.out.println("\nSomatório dos números pares: "+somaPar);
+		System.out.println("\nSomatório dos números impares: "+somaImpar);
+		
+	}
+
+}
+
