@@ -1,0 +1,33 @@
+//Exemplo 2 de Array dia 05/04/2022 
+
+package Familia51; 
+import java.util.Scanner;
+
+public class ExemploArray1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int [][] numeros = new int [2][3];
+		int somaNumeros=0,linha,coluna;
+		float mediaNumeros;
+		Scanner leia = new Scanner(System.in);
+		
+		for(linha=0;linha<2;linha++)
+		{
+			for(coluna=0;coluna<3;coluna++)
+			{
+				System.out.print("\nEntre com um número: ");
+				numeros[linha][coluna] = leia.nextInt();
+				somaNumeros += numeros [linha][coluna]; 
+			}
+		}
+		
+		mediaNumeros = somaNumeros / 6;
+		System.out.printf("\nMédia dos números lidos doi de: %5.2f",numeros[linha][coluna]);
+		
+		
+		
+	}
+
+}
